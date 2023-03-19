@@ -1,0 +1,315 @@
+*  {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+.container {
+    margin: 0;
+    text-align: center;
+}
+
+.nav{
+    background-color: #08dff3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.site-title {
+    font-size: 2rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.nav a{
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.nav li.active {
+    background-color: #81eded;
+}
+
+.nav li.hover {
+    background-color: #defafa;
+}
+
+.Prod {
+    
+    background-color: #17a06a;
+    color: #fcfcf8f2;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.product {
+    margin: .5rem;
+    background-color: #17a06a;
+    color: #fcfcf8f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 8rem;
+    
+}
+
+.item {
+    margin: .5rem;
+    background-color: #17a06a;
+    color: #fcfcf8f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0 26rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+    border: 1px solid var(--secondary color);
+    object-fit: cover;
+    height: 200px;
+    width: 250px;
+}
+
+
+.food{
+    width: 200px;
+    
+}
+
+.light{
+    width: 200px;
+    
+}
+
+.about {
+    background-color: #aa5ded;
+    color: #0e0e0cf2;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+}
+.content{
+    background-color: #aa5ded;
+    color: #0e0e0cf2;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
+.footer{
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #08dff3;
+    padding: 10px;
+    font-size: 40px;
+    font-style: italic;
+    color:#510693;
+}
+
+.pet{
+    margin: 5rem;
+    background-color: #65e1b8;
+    color: #f1edf6f2;
+    text-align: center;
+}
+
+.fishy {
+    margin: .5rem;
+    background-color: #08dff3;
+    color: #fcfcf8f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 8rem;
+ 
+}  
+
+.fish1{
+    width: 300px;
+    
+}
+
+.fish2{
+    width: 300px;
+    
+}
+.fish3{
+    width: 300px;
+    
+}
+
+.fish4{
+    width: 300px;
+    
+}
+
+.gold{
+    font-size: 40px;
+}
+
+.food1{
+    font-size: 30px;
+}
+.light1{
+    font-size: 30px;
+}
+
+.filter{
+    width: 200px;
+    
+}
+.fil1{
+    font-size: 30px;
+}
+
+.fer{
+    width: 200px;
+    
+}
+.fer1{
+    font-size: 30px;
+}
+
+.care{
+    width: 200px;
+    
+}
+.care1{
+    font-size: 30px;
+}
+
+.gourami{
+    font-size: 40px;
+}
+.guppy{
+    font-size: 40px;
+}
+.platy{
+    font-size: 40px;
+}
+
+
+
+.ins1{
+    font-size: 30px;
+}
+.aq1{
+    font-size: 30px;
+}
+.vet1{
+    font-size: 30px;
+}
+.mai1{
+    font-size: 30px;
+
+}
+.ins{
+    width: 200px;
+    
+}
+
+.aq{
+    width: 200px;
+    
+}
+.vet{
+    width: 200px;
+    
+}
+
+.mai{
+    width: 200px;
+    
+}
+.Serve {
+    
+    background-color: #17a06a;
+    color: #fcfcf8f2;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.serv {
+    margin: 0;
+    background-color: #95f386b3;
+    color: #fcfcf8f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 8rem;
+    
+}
+
+.serv2 {
+    margin: 0;
+    background-color: #76c3e2;
+    color: #fcfcf8f2;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0 26rem;
+}
+
+.ab{
+    margin: .5rem;
+    background-color: #936bd8;
+    color: #fcfcf8f2;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0 26rem;
+    
+}
+
+.para{
+    justify-content: right;
+}
+
+.price{
+    font-size: 20px;
+    color: #0b0b0c;
+}

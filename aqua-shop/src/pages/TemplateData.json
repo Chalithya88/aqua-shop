@@ -1,0 +1,36 @@
+
+
+
+[
+    {
+        "id": 1,
+        "image": "images1/aq7.jpg",
+        "title": "Fish Food"
+       
+
+    },
+    {
+        "id": 2,
+        "image": "images1/aq6.jpg",
+        "title": "Lighting"
+       
+    },
+    {
+        "id": 3,
+        "image": "images1/aq3.jpg",
+        "title": "Oxygen Filters"
+       
+    },
+    {
+        "id": 4,
+        "image": "images1/aq4.jpg",
+        "title": "Fertilizer"
+        
+    },
+    {
+        "id": 5,
+        "image": "images1/aq5.jpg",
+        "title": "Fish Care"
+        
+    }
+]

@@ -279,7 +279,7 @@ img {
     align-items: stretch;
     gap: 2rem;
     padding: 0 8rem;
-    
+    padding-top: 40px;
 }
 
 .serv2 {
@@ -291,6 +291,7 @@ img {
     align-items: stretch;
     gap: 1rem;
     padding: 0 26rem;
+    padding-top: 40px;
 }
 
 .ab{
@@ -307,6 +308,7 @@ img {
 
 .para{
     justify-content: right;
+    
 }
 
 .price{

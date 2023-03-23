@@ -1,49 +1,55 @@
-const foodpic = new URL("../images/aq7.jpg", import.meta.url)
-const lightpic = new URL("../images/aq6.jpg", import.meta.url)
-const filpic = new URL("../images/aq3.jpg", import.meta.url)
-const ferpic = new URL("../images/aq4.jpg", import.meta.url)
-const carepic = new URL("../images/aq5.jpg", import.meta.url)
+import React, {useState} from "react"
+import searchbar from "./searchbar.css";
+import data from './TemplateData.json';
+
 
 export default function AllProducts(){
+    const [searchTerm, setSearchTerm] = useState("");
     return (
-    <div className ="Prod">
+    
+    
+    <div className ="Prod"> 
     <h1>PRODUCT CATEGORIES</h1>
-    
-    <div className ="product">
-        
-        <div className = "food">
-            <img src={foodpic} alt = "Descrption"/>
-            <h1 className = "food1">Fish Food</h1>
+    <>
+    <div className= "templateContainer">
+        <div className="searchInput_Container">
+            <input id = "searchInput" type="text" placeholder="Search Here...." onChange={(event) =>{
+                setSearchTerm(event.target.value);
+                }}    />
         </div>
-
-        
-        <div className = "light">
-            <img src={lightpic} alt = "Description"/>
-            <h1 className = "light1">Lighting</h1>
+        <div className = "template_Container">
+            {
+                data
+                .filter((val)=>{
+                    if(searchTerm == ""){
+                       return val;
+                    }else if(val.title.toLowerCase().includes(searchTerm.toLowerCase())){
+                        return val;
+                    }
+                })
+                .map((val)=>{
+                   return(
+                    <div className = "template" key={val.id}>
+                        <div className="img1">
+                        <img src = {val.image} alt=""/>
+                        </div>
+                        <div className="imgtitle">
+                        <h3>{val.title}</h3>
+                        </div>
+                        
+                        </div>
+                   ) 
+                })
+            }
         </div>
-
-        <div className = "filter">
-            <img src={filpic} alt = "Description"/>
-            <h1 className = "fil1">Oxygen Filters</h1>
-        </div>
-        
     </div>
+    </>
     
-    <div className ="item">
-    <div className = "fer">
-            <img src={ferpic} alt = "Descrption"/>
-            <h1 className = "fer1">Fertilizer</h1>
-        </div>
-
-        
-        <div className = "care">
-            <img src={carepic} alt = "Description"/>
-            <h1 className = "care1">Fish Care</h1>
-        </div>
-    </div>
     </div>
     
 
     
     )
 }
+
+
